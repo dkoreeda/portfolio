@@ -97,6 +97,10 @@ ul li a:hover {
   }
 }
 
+img#biomedical {
+  width: 100%;
+}
+
 #developer {
   width: 50%;
   height: 400px;
@@ -116,6 +120,10 @@ ul li a:hover {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+}
+
+img#developer {
+  width: 100%;
 }
 
 /*#designer {
