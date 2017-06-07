@@ -78,8 +78,8 @@ ul li a:hover {
 
 #biomedical {
   width: 50%;
-  height: 200px;
-  background-color: #ddf;
+  height: 400px;
+  /*background-color: #ddf;*/
   animation: slideInLeft 3s;
   -webkit-animation-name: slideInLeft 3s;
 }
@@ -99,8 +99,8 @@ ul li a:hover {
 
 #developer {
   width: 50%;
-  height: 200px;
-  background-color: #dfd;
+  height: 400px;
+  /*background-color: #dfd;*/
   animation: slideInRight 3s;
   -webkit-animation-name: slideInRight 3s;
 }
@@ -118,15 +118,15 @@ ul li a:hover {
   }
 }
 
-#designer {
+/*#designer {
   width: 100%;
   height: 200px;
   background-color: #fdd;
   animation: slideInUp 3s;
   -webkit-animation-name: slideInUp 3s;
-}
+}*/
 
-@keyframes slideInUp {
+/*@keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
@@ -137,7 +137,7 @@ ul li a:hover {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-}
+}*/
 
 .parent {
   width: 90%;
@@ -241,21 +241,40 @@ h2 {
 }
 
 .project-photo1 {
-  width: 100%;
-  height: 400px;
-  background-color: #ddf;
+  width: 90%;
+  height: 380px;
+  margin: 0 auto;
+}
+
+.project-photo1 img {
+  width: 60%;
+  position: relative;
+  left: 25%;
+  top: 15%;
 }
 
 .project-photo2 {
   width: 100%;
   height: 400px;
-  background-color: #dfd;
+}
+
+.project-photo2 img {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  top: 5%;
 }
 
 .project-photo3 {
   width: 100%;
   height: 400px;
-  background-color: #fdd;
+}
+
+.project-photo3 img {
+  width: 35%;
+  position: relative;
+  left: 30%;
+  top: 5%;
 }
 
 .project-photo4 {
@@ -309,9 +328,11 @@ h2 {
 
 /*Slideshow*/
 .slideshow-container{
-  width: 100%;
-  margin-top: 5%;
+  width: 70%;
+  padding: 0 1%;
+  margin: 3.5% auto;
   position: relative;
+  border: .5px solid #ddd;
 }
 
  /*Next & previous buttons*/
@@ -403,8 +424,15 @@ h2 {
 .skill {
   width: 150px;
   height: 150px;
-  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 50%;
   margin: 4%;
+  text-align: center;
+}
+
+.skill p {
+  position: relative;
+  top: 30%;
 }
 
 
