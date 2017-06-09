@@ -1,8 +1,4 @@
 body {
-/*  display: flex;
-  justify-content: center;
-  align-items: center;*/
-  /*background-color: #f8e8db;*/
   font-family: 'Cormorant Garamond', serif;
   margin: 0 auto;
   padding: 0;
@@ -13,9 +9,10 @@ body {
   heigth: 100%;
   position: fixed;
   top: 0;
-  margin: 3% auto;
   background-color: #fff;
   justify-content: center;
+  z-index: 1;
+  padding: 3% 0;
 }
 
 .selected {
@@ -32,6 +29,14 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  display: none;
+}
+
+span {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,9 +47,9 @@ a {
 }
 
 ul {
-  /*text-align: center;*/
+  text-align: center;
   margin: 0 auto;
-  width: 50%;
+  padding: 0;
   background-color: #fff;
 }
 
@@ -70,16 +75,18 @@ ul li a:hover {
 }
 
 .main {
+  padding: 5% 0;
+  margin: 12% 8%;
+}
+
+.flex {
   display: flex;
   flex-wrap: wrap;
-  padding: 5% 0;
-  margin: 10% 8%;
 }
 
 #biomedical {
   width: 50%;
-  height: 400px;
-  /*background-color: #ddf;*/
+  height: auto;
   animation: slideInLeft 3s;
   -webkit-animation-name: slideInLeft 3s;
 }
@@ -103,8 +110,7 @@ ul li a:hover {
 
 #developer {
   width: 50%;
-  height: 400px;
-  /*background-color: #dfd;*/
+  height: auto;
   animation: slideInRight 3s;
   -webkit-animation-name: slideInRight 3s;
 }
@@ -186,6 +192,7 @@ h2 {
   color: purple;
   font-size: 24px;
   margin: 0 auto;
+  z-index: -1;
   -webkit-animation-name: bounce;
   animation: bounce 3s linear infinite;
   -webkit-transform-origin: center bottom;
@@ -293,7 +300,6 @@ h2 {
 
 #contact {
   display: flex;
-  justify-content: center;
   height: 500px;
   margin: 13% 0;
 }
@@ -308,35 +314,16 @@ h2 {
   width: 140px;
   height: 100px;
 }
-/*
-.brand {
-  line-height: 1.5;
-  padding: 5%;
-  font-family: 'EB Garamond', serif;
-}*/
-
-/*.flag {
-  width: 20px;
-  heigth: 10px;
-}*/
-
-/*.my-info-heading {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 3%;
-  text-transform: uppercase;
-  color: #999;
-  font-size: 12px;
-}*/
 
 .project {
   margin: 5% 0;
-  padding: 5%;
+  padding: 9% 5%;
 }
 
 /*Slideshow*/
 .slideshow-container{
   width: 70%;
+  height: 330px;
   padding: 0 1%;
   margin: 3.5% auto;
   position: relative;
@@ -443,4 +430,109 @@ h2 {
   top: 30%;
 }
 
+
+@media screen and (min-width: 480px) {
+  #contact {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .menu {
+    padding: 5% 0 1% 0;
+  }
+
+  .main {
+    position: absolute;
+    top: 100px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1em;
+    letter-spacing: 0.6em;
+  }
+
+  h3 {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7em;
+    letter-spacing: 0.17em;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    margin-top: 6%;
+  }
+
+  ul {
+    padding: 5% 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  li {
+    display: block;
+    padding: 2% 0;
+  }
+
+  .parent {
+    margin-top: -20%;
+    display: block;
+    padding: 20%;
+  }
+
+  .child {
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: .8em;
+  }
+
+  .scroll {
+    margin: -15% auto;
+  }
+
+  #github {
+  width: 70px;
+  height: 70px;
+  }
+
+  #linkedin {
+    width: 100px;
+    height: 70px;
+  }
+
+  .slideshow-container {
+    height: 150px;
+  }
+
+  .project-photo1 {
+    padding: 10%;
+    height: auto;
+  }
+
+  .project-photo2 {
+    padding: 10%;
+    height: auto;
+  }
+
+  .prev:hover, .next:hover {
+    display: none;
+  }
+}
 

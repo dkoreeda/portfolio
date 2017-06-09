@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Deise Koreeda</title>
-  <script src="jquery.js"></script>
-  <script src="./script.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -12,50 +11,47 @@
 <body>
   <header class="menu">
     <h1>Deise Koreeda</h1>
-    <ul>
+    <h3>Web Developer and Biomedical Engineer</h3>
+    <span id="burger">&#9776;</span>
+    <ul id="menu" class="hidden">
       <li><a class="nav" href="./index.html">Home</a></li>
       <li><a class="nav" href="./about-me.html">About me</a></li>
       <li><a class="nav" href="./projects.html">Projects</a></li>
-      <!-- <li><a class="nav" href="./skills.html">Skills</a></li> -->
       <li><a class="nav" href="./contact.html">Contact</a></li>
       <li><a class="nav" href="./deise-koreeda-resume.pdf" target="_blank">Resume</a></li>
     </ul>
   </header>
+  <div class="main flex">
+      <div class="parent">
+        <div class="child">
+          <img  id="me" src="./img/me2.jpeg" alt="">
 
-  <div class="parent">
-    <div class="child">
-      <img  id="me" src="./img/me2.jpeg" alt="">
+        </div>
+        <div class="child">
+          <h2>about me</h2>
+          <p>As a biomedical engineer and web developer,
+          I am able to merge engineering with coding to develop efficient and
+          creative web solutions to impact people's lives.
+          My background in healthcare operations enables me to understand the
+          importance of technology to improve business performance, making me a
+          resourceful professional. </p>
+        </div>
+      </div>
 
-    </div>
-    <div class="child">
-      <h2>about me</h2>
-      <p>As a biomedical engineer and web developer,
-      I am able to merge engineering with coding to develop efficient and
-      creative web solutions to impact people's lives.
-      My background in healthcare operations enables me to understand the
-      importance of technology to improve business performance, making me a
-      resourceful professional. </p>
+      <div class="scroll">&#8595</div>
 
-<!--       <p>As a biomedical engineer, a graphic designer and a web developer, I like to face challenges and to look for opportunities to tackle obstacles.
-      I am able to merge engineering with coding and design skills to develop creative and efficient solutions in healthcare.
-      Moreover, my previous work experience in the business side of healthcare enables me to acknowledge business core values and prioritize specific tasks
-      to manage costs as well as to leverage a company's profitability. Furthermore, I can speak Portuguese, which is my native language, and Spanish fluently.
-      Therefore, I believe that I have unique professional attributes and credentials to help a company on to reach its targets and goals.</p> -->
-    </div>
+      <div class="skills">
+        <div class="skill"><p>Javascript</p></div>
+        <div class="skill"><p>Jquery</p></div>
+        <div class="skill"><p>Node.js</p></div>
+        <div class="skill"><p>Ruby</p></div>
+        <div class="skill"><p>Ruby on Rails</p></div>
+        <div class="skill"><p>Adobe InDesign</p></div>
+        <div class="skill"><p>Adobe Illustrator</p></div>
+        <div class="skill"><p>Adobe Photoshop</p></div>
+      </div>
   </div>
 
-  <div class="scroll">&#8595</div>
-
-  <div class="skills">
-    <div class="skill"><p>Javascript</p></div>
-    <div class="skill"><p>Jquery</p></div>
-    <div class="skill"><p>Node.js</p></div>
-    <div class="skill"><p>Ruby</p></div>
-    <div class="skill"><p>Ruby on Rails</p></div>
-    <div class="skill"><p>Adobe InDesign</p></div>
-    <div class="skill"><p>Adobe Illustrator</p></div>
-    <div class="skill"><p>Adobe Photoshop</p></div>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>

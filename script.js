@@ -1,3 +1,22 @@
+const navbar = document.getElementById('burger');
+console.log(navbar);
+
+navbar.addEventListener('click', () => {
+  console.log("clicked");
+  const menuList = document.querySelector('ul');
+  console.log(menuList);
+  console.log(menuList.classList);
+  if(menuList.classList.contains("hidden")) {
+      menuList.classList.remove('hidden');
+      menuList.classList.add('show');
+      document.querySelector('.main').style.marginTop = "180px";
+  } else if(menuList.classList.contains("show")) {
+    menuList.classList.remove('show');
+    menuList.classList.add('hidden');
+    document.querySelector('.main').style.marginTop = "44px";
+  }
+});
+
 function changeOpacity(x){
   x.style.opacity = 0.5;
 }
@@ -49,7 +68,3 @@ function showSlides(n) {
   console.log(slides[slideIndex-1]);
   dots[slideIndex-1].className += " active";
 }
-
-//nav bad - mostrar qual link esta selecionado
-
-
