@@ -50,7 +50,6 @@ ul {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  background-color: #fff;
 }
 
 li {
@@ -87,8 +86,8 @@ ul li a:hover {
 #biomedical {
   width: 50%;
   height: auto;
-  animation: slideInLeft 3s;
-  -webkit-animation-name: slideInLeft 3s;
+  /*animation: slideInLeft 3s;*/
+  /*-webkit-animation-name: slideInLeft 3s;*/
 }
 
 @keyframes slideInLeft {
@@ -111,8 +110,8 @@ ul li a:hover {
 #developer {
   width: 50%;
   height: auto;
-  animation: slideInRight 3s;
-  -webkit-animation-name: slideInRight 3s;
+  /*animation: slideInRight 3s;*/
+  /*-webkit-animation-name: slideInRight 3s;*/
 }
 
 @keyframes slideInRight {
@@ -256,8 +255,8 @@ h2 {
 }
 
 .project-photo1 {
-  width: 90%;
-  height: 380px;
+  width: 100%;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -269,34 +268,34 @@ h2 {
 }
 
 .project-photo2 {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 50%;
 }
 
 .project-photo2 img {
   width: 60%;
   position: relative;
-  left: 20%;
-  top: 5%;
+  left: 30%;
+  top: 15%;
 }
 
 .project-photo3 {
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 50%;
 }
 
 .project-photo3 img {
   width: 35%;
   position: relative;
-  left: 30%;
-  top: 5%;
+  left: 45%;
+  top: 15%;
 }
 
-.project-photo4 {
+/*.project-photo4 {
   width: 100%;
   height: 400px;
   background-color: #ddd;
-}
+}*/
 
 #contact {
   display: flex;
@@ -328,6 +327,13 @@ h2 {
   margin: 3.5% auto;
   position: relative;
   border: .5px solid #ddd;
+}
+
+.mySlides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
 }
 
  /*Next & previous buttons*/
@@ -432,12 +438,56 @@ h2 {
 
 
 @media screen and (min-width: 480px) {
+  #biomedical {
+    width: 50%;
+    height: auto;
+    animation: slideInLeft 3s;
+    -webkit-animation-name: slideInLeft 3s;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  #developer {
+    width: 50%;
+    height: auto;
+    animation: slideInRight 3s;
+    -webkit-animation-name: slideInRight 3s;
+  }
+
+  @keyframes slideInRight {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
   #contact {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
+  body {
+    background-color: #fff;
+  }
+
   .menu {
     padding: 5% 0 1% 0;
   }
@@ -508,8 +558,8 @@ h2 {
   }
 
   #github {
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
   }
 
   #linkedin {
@@ -518,21 +568,30 @@ h2 {
   }
 
   .slideshow-container {
-    height: 150px;
+    height: 200px;
   }
 
-  .project-photo1 {
-    padding: 10%;
-    height: auto;
+  .project-photo1 img {
+    left: 25%;
+    top: 35%;
   }
 
-  .project-photo2 {
-    padding: 10%;
-    height: auto;
+  .project-photo2 img {
+    width: 90%;
+    left: 20%;
+    top: 25%;
   }
 
-  .prev:hover, .next:hover {
-    display: none;
+  .project-photo3 img {
+    width: 50%;
+    left: 40%;
+    top: 25%;
   }
+
+  #contact {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 

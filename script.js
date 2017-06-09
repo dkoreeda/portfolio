@@ -9,7 +9,7 @@ navbar.addEventListener('click', () => {
   if(menuList.classList.contains("hidden")) {
       menuList.classList.remove('hidden');
       menuList.classList.add('show');
-      document.querySelector('.main').style.marginTop = "180px";
+      document.querySelector('.main').style.marginTop = "220px";
   } else if(menuList.classList.contains("show")) {
     menuList.classList.remove('show');
     menuList.classList.add('hidden');
